@@ -1,15 +1,17 @@
-.carte {
-  background: #f1f5f9;
-  padding: 1rem;
-  border-radius: 8px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 45 |         color: $white;
+ *    |                ^^^^^^
+ *    '
+ *   src\style.scss 45:16  root stylesheet */
 
-h1 {
-  color: #075985;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 45 \2502          color: $white;\d\a    \2502                 ^^^^^^\a    \2575 \a   src\\style.scss 45:16  root stylesheet";
 }
-
-p {
-  color: #172337;
-}
-
-/*# sourceMappingURL=style.css.map */

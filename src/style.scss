@@ -1,12 +1,24 @@
 $primary : #075985 ;
 $texte : #172337;
 $fond : #f1f5f9;
-$espace : 1rem;
+$espace : 2rem;
+$blanc : #ffffff;
+ $arrondi : 8px;
+
+@mixin blocCommun{
+    background:$fond;  
+     padding: $espace; 
+   border-radius: $arrondi;
+}
+
 
 .carte{
-    background:$fond ;
+background:$fond ;
     padding: $espace;
     border-radius: 8px;
+    
+
+    
 
 
 }
@@ -16,4 +28,33 @@ h1{
 p{
     color: $texte;
 
+}
+
+
+// exo 3
+
+.card { background: $fond;
+
+    h2{ color: $texte;
+
+    }
+    p{color: $texte;
+
+    }
+    button{background: $primary;
+        color: $white;
+
+    }
+}
+
+// exo4
+
+.profil{
+     @include blocCommun;
+     color: #7a7f82;
+}
+
+.offre{
+     @include blocCommun;
+     color: #8fc3e0;
 }
