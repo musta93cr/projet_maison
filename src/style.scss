@@ -1,0 +1,19 @@
+$primary : #075985 ;
+$texte : #172337;
+$fond : #f1f5f9;
+$espace : 1rem;
+
+.carte{
+    background:$fond ;
+    padding: $espace;
+    border-radius: 8px;
+
+
+}
+h1{
+    color: $primary;
+}
+p{
+    color: $texte;
+
+}
