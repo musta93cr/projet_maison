@@ -145,3 +145,9 @@ p{
     }
 
 }
+
+.carte{
+    padding: index.calcul-espace(1rem);
+    margin:index.calcul-espace(2rem);
+    border:index.$contours;
+}

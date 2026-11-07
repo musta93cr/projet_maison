@@ -139,4 +139,10 @@ p{
   background: #f5c2c2;
 }
 
+.carte {
+  padding: 2rem;
+  margin: 4rem;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=style.css.map */
