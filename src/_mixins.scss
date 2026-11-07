@@ -1,0 +1,6 @@
+@use 'tokens';
+@mixin boutonCommun{ 
+    border-radius: tokens.$arrondi;
+    color: tokens.$texte;
+
+}

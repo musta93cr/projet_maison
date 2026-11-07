@@ -1,17 +1,142 @@
-/* Error: Undefined variable.
- *    ,
- * 45 |         color: $white;
- *    |                ^^^^^^
- *    '
- *   src\style.scss 45:16  root stylesheet */
+/*$primary : #075985 ;
+$texte : #172337;
+$fond : #f1f5f9;
+$fond2 : #f5c2c2;
+$blanc : #ffffff;
+$espace : 2rem;
+ $arrondi : 8px;
+ $marge : 20px;
+ $espacemessage: 1rem;
+ $contours: 1px solid;
+ $succes:#7fe485;
+ $erreur : #da5656;
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 45 \2502          color: $white;\d\a    \2502                 ^^^^^^\a    \2575 \a   src\\style.scss 45:16  root stylesheet";
+@mixin blocCommun{
+    background:$fond;  
+     padding: $espace; 
+   border-radius: $arrondi;
+   margin: $marge;
 }
+
+
+.carte{
+background:$fond ;
+    padding: $espace;
+    border-radius: 8px;
+
+
+
+
+
+}
+h1{
+    color: $primary;
+}
+p{
+    color: $texte;
+
+}
+
+
+// exo 3
+
+.card { background: $fond;
+
+    h2{ color: $texte;
+
+    }
+    p{color: $texte;
+
+    }
+    button{background: $primary;
+        color: $blanc;
+
+    }
+}
+
+// exo4
+
+.profil{
+     @include blocCommun;
+     color: #7a7f82;
+
+}
+
+.offre{
+     @include blocCommun;
+     color: #8fc3e0;
+}
+
+// Exo 5
+
+// @mixin boutonCommun{ 
+    // border-radius: $arrondi;
+    // color: $texte;
+
+// }
+
+// .btn-principal{
+    // @include boutonCommun;
+    // background: $fond;
+
+// }
+
+// .btn-secondaire{
+    // @include boutonCommun;
+    // background: $fond2;
+
+// }
+
+// Exo 5
+
+
+
+.commande{
+    background: tokens.$fond;
+
+    button{ background: tokens.$fond2;
+        color: $texte;
+        border-radius: $arrondi;
+        &:hover { background: #456a9f90;
+        }
+
+    }
+}
+
+// Exo 7
+
+%message-commun{ padding:  $espacemessage;
+    border-radius: $arrondi;
+    border: $contours;
+    margin: $marge;
+}
+
+.notification-succes{
+    @extend %message-commun;
+    background: $succes;
+
+}
+
+.notification-erreur{
+   @extend %message-commun; 
+   background: $erreur;
+
+ */
+.fiche-client {
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+.fiche-client h2 {
+  display: block;
+  background: #f5c2c2;
+}
+.fiche-client p {
+  display: block;
+  background: #f5c2c2;
+}
+.fiche-client button {
+  display: block;
+  background: #f5c2c2;
+}
+
+/*# sourceMappingURL=style.css.map */

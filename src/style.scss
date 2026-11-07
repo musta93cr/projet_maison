@@ -1,14 +1,23 @@
-$primary : #075985 ;
+@use 'index';
+// @use 'tokens';
+/*$primary : #075985 ;
 $texte : #172337;
 $fond : #f1f5f9;
-$espace : 2rem;
+$fond2 : #f5c2c2;
 $blanc : #ffffff;
+$espace : 2rem;
  $arrondi : 8px;
-
+ $marge : 20px;
+ $espacemessage: 1rem;
+ $contours: 1px solid;
+ $succes:#7fe485;
+ $erreur : #da5656;
+ 
 @mixin blocCommun{
     background:$fond;  
      padding: $espace; 
    border-radius: $arrondi;
+   margin: $marge;
 }
 
 
@@ -42,7 +51,7 @@ p{
 
     }
     button{background: $primary;
-        color: $white;
+        color: $blanc;
 
     }
 }
@@ -52,9 +61,87 @@ p{
 .profil{
      @include blocCommun;
      color: #7a7f82;
+
 }
 
 .offre{
      @include blocCommun;
      color: #8fc3e0;
+}
+
+// Exo 5
+
+// @mixin boutonCommun{ 
+    // border-radius: $arrondi;
+    // color: $texte;
+
+// }
+
+// .btn-principal{
+    // @include boutonCommun;
+    // background: $fond;
+
+// }
+
+// .btn-secondaire{
+    // @include boutonCommun;
+    // background: $fond2;
+
+// }
+
+// Exo 5
+
+
+
+.commande{
+    background: tokens.$fond;
+
+    button{ background: tokens.$fond2;
+        color: $texte;
+        border-radius: $arrondi;
+        &:hover { background: #456a9f90;
+        }
+
+    }
+}
+
+// Exo 7
+
+%message-commun{ padding:  $espacemessage;
+    border-radius: $arrondi;
+    border: $contours;
+    margin: $marge;
+}
+
+.notification-succes{
+    @extend %message-commun;
+    background: $succes;
+   
+}
+
+.notification-erreur{
+   @extend %message-commun; 
+   background: $erreur;
+   
+ */
+
+// Exo 8
+
+.fiche-client{background:index.$fond;  
+            border-radius:index.$arrondi;
+
+    h2{display:block;
+        background: index.$fond2;
+        
+
+    }
+    p{display:block;
+        background: index.$fond2;
+
+    }
+    button{ display:block;
+        background:index.$fond2;
+
+    }
+
 }
